@@ -1,0 +1,161 @@
+/* Show nav for large screens */
+@media (max-width: 970px) {
+    .nav-toggle {
+        display: block; /* Hide toggle button on large screens */
+    }
+
+    nav {
+        display: none; /* Always visible */
+    }
+
+    header nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 85%;
+        margin-right: 0%;
+        background-color: black;
+        z-index: 1;
+        width: 70%;
+        text-align: left;
+        gap: 5%;
+        justify-content: right;
+
+
+    }
+    header nav a{
+        align-content: space-around;
+    }
+    
+    
+
+    header img {
+        width: 15%; /* Image takes 50% of the parent container */
+        height: auto; /* Keeps aspect ratio */
+    }
+    
+   
+}
+@media (max-width: 500px){
+    header img {
+        width: 25%; /* Image takes 50% of the parent container */
+        height: auto; /* Keeps aspect ratio */
+    }
+    .phase-title{
+        font-size: 40px;
+    }
+    .timer span{
+        font-size: 15px;
+    }
+    .label{
+        font-size: 13px;
+    }
+    .usdt h2, .holders h2 {
+        font-size: 16px;
+        color: white;
+    }
+    
+    .usdt p, .holders p {
+        font-size: 10px;
+        color: white;
+    }
+    .download img{
+        border: 2px, whitesmoke;
+        width: 50%;
+        height: auto;
+    }
+    .download{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        width: 80%;
+        padding-left: 20%;
+        
+    }
+    .download div{
+        width: 100%;
+    }
+    .Step_1 h2{
+        font-size: 14px;
+      }
+     .Step_1 p{
+        font-size: 11px;
+    }
+    .declaimer p{
+        font-size: 9px;
+        font-weight: lighter;
+        font-style: italic;
+        margin: 4%;
+    }
+    .Buying h1{
+        font-size: 11px;
+    }
+    .signup h3{
+        font-size: 14px;
+
+    }
+    .signup1 input{
+        width: 200px;
+        height: auto;
+    }
+    .Step_1{
+        text-align: center;
+        justify-content: center;
+    }
+    .signup1 button{
+        width: 200px;
+        height: 50px;
+    }
+    .signup2 img{
+        width: 40%;
+        height: auto;
+    }
+    .flogo img{
+        width: 70%;
+        height: auto;
+    }
+    .flogo p{
+        font-size: 8px;
+    }
+    footer div h3{
+        font-size: 14px;
+        margin: 3%;
+    }
+    footer div h4{
+        font-size: 6px;
+    }
+    footer{
+        gap: 5%;
+    }
+    .social-icons a img {
+        width: 20px; /* Set icon size */
+        height: auto;
+    }
+    .social-section h3{
+        font-size: 14px;
+
+    }
+    .last{
+        font-size: 9px;
+    }
+    .time-box p {
+        font-size: 11px;
+    }
+    .time-box span {
+        font-size: 20px;
+    }
+    .price-text{
+        font-size: 9px;
+    }
+    .increase{
+        font-size: 9px;
+    }
+    .price-value{
+        font-size: 9px;
+    }
+    
+
+
+
+}

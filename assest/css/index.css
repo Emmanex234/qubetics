@@ -1,0 +1,578 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to bottom, #142348 0.5%, #040404 99.5%);
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+}
+
+header img {
+    width: 10%; /* Image takes 50% of the parent container */
+    height: auto; /* Keeps aspect ratio */
+}
+
+header nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    color: #b45eff;
+}
+
+.connect-wallet {
+    background: linear-gradient(90deg, #00ff7f, #b45eff);
+    border: none;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Phase Countdown Section */
+
+.phase-countdown {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 300px; /* Adjust height for the half-moon look */
+    background: black; /* Gradient background */
+    border-bottom-right-radius:120% ;
+    border-bottom-left-radius:120% ;
+    box-shadow: 0 4px 4px white;
+   
+    overflow: hidden; /* Hide the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.phase-countdown img {
+    width: 30%; /* Image takes 50% of the parent container */
+    height: auto; /* Keeps aspect ratio */
+}
+    
+.timer {
+    display: flex;
+    justify-content: center;
+}
+
+.time-box {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.time-box span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f0f2f1;
+}
+
+.time-box p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* USDT and Holders Info */
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+   
+    
+} ;
+    
+.usdt, .holders {
+    text-align: center;
+    color: white;
+}
+
+.usdt h2, .holders h2 {
+    font-size: 32px;
+    color: white;
+}
+
+.usdt p, .holders p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Token Value Section */
+.token-value {
+    text-align: center;
+    padding: 20px;
+    background: #0a0f1f;
+}
+
+.token-value .price {
+    font-weight: bold;
+    color: #00ff7f;
+}
+
+.token-value .increase {
+    font-size: 16px;
+    color: #b45eff;
+    margin-top: 10px;
+}
+/* General Styles */
+.token-sale {
+    padding: 2rem;
+    text-align: center;
+    background-color:#121313;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: none;
+    border-radius: 5%;
+   
+}
+.token-sale img{
+    width: 100%;
+    height: auto;
+}
+
+/* Token Information Section */
+.token-info {
+    margin-bottom: 2rem;
+}
+.token-details h3,
+.token-details h4 {
+    margin: 0.5rem 0;
+    font-weight: 400;
+    color: #c0c0c0;
+}
+.token-details .price {
+    color: #00d1ff;
+    font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-container {
+    position: relative;
+    background: #2b2b2b;
+    border-radius: 20px;
+    height: 12px;
+    margin: 1.5rem auto;
+    width: 80%;
+}
+.progress-bar {
+    position: relative;
+    background: linear-gradient(to right, #65e7ff, #ad6fff);
+    height: 100%;
+    border-radius: 20px;
+    width: 70%; /* Adjust to match progress */
+}
+.progress-indicator {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    transform: translateX(50%);
+    height: 20px;
+    width: 20px;
+    background: radial-gradient(circle, #ffffff, #a54cff);
+    border-radius: 50%;
+}
+.tooltip {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1e1e1e;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Payment Methods Section */
+.payment-methods h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #c0c0c0;
+}
+.payment-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.option img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0.5rem;
+}
+.option p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #fff;
+}
+.option span {
+    font-size: 0.7rem;
+    color: #8f8f8f;
+}
+.option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to right, #e100ff, #7f00ff);
+}
+.option.more {
+    background: #292929;
+    color: #fff;
+}
+
+.option {
+    position: relative;
+    display: flex;
+   flex-direction: row;
+    justify-content: left;
+    background: #121212;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 12px;
+    width: 250px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.option.more {
+    background: #292929;
+    color: #fff;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    padding: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background-color: #292929;
+}
+
+/* Show dropdown when active */
+.option.more.active .dropdown {
+    display: block;
+}
+  h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .conversion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  input {
+    width: 80px;
+    text-align: center;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  input:disabled {
+    background-color: transparent;
+  }
+  
+  .currency, .equals {
+    margin: 0 10px;
+  }
+  
+  button {
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #e100ff, #7f00ff);
+  }
+  
+  .how-to-buy {
+    display: block;
+    margin-top: 15px;
+    color: #a0a0a0;
+    text-decoration: none;
+  }
+  
+  .how-to-buy:hover {
+    color: #fff;
+  }  
+  .container{
+    margin-top: 10%;
+  }
+  .how_to_buy img{
+    width: 100%;
+    height: auto;
+  }
+  .Step_1{
+    text-align: center;
+    border: 10px, white;
+    border-radius: 10%;
+    background:#040404 ;
+    padding: 2%;
+    margin: 5%;
+  }
+  .Step_1 h2{
+    font-size: 25px;
+    margin: 5%;
+  }
+ .Step_1 p{
+    padding: 1%;
+    font-size: 15px;
+    font-weight: 0%;
+
+}
+.download{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    border-radius: 12px;
+
+}
+.download img{
+    border: 2px, whitesmoke;
+
+}
+.download div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    background: linear-gradient(90deg, #00ff7f, #b45eff);
+}
+.download div{
+    display: inline;
+    text-align: center;
+    border: solid 2px #00ff7f;
+    width: 30%;
+    border-radius: 12px;
+    padding: 2%;
+    
+}
+.buying{
+    text-align: center;
+    margin: 2%;
+}
+.signup{
+    margin: 5%;
+
+}
+.signup1{
+    display: flex;
+    width: 50%;
+    gap: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.signup1 input{
+    width: 60%;
+    padding: 5%;
+    height: 50%;
+    text-align: left;
+    border: solid 2px rgba(255, 255, 255, 0.345);
+    border-radius: 25%;
+}
+.signup2{
+    margin: 2%;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    padding: 2%;
+}
+footer div p{
+    font-size: 12px;
+    color: rgb(197, 193, 186);
+    font-weight: lighter;
+}
+footer div img{
+    width: 25%;
+    height: 25%;
+}
+footer .flogo p{
+    padding: 2%;
+}
+footer div h3{
+    font-size: 20px;
+    margin: 3%;
+}
+footer div h4{
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: #edf1f2f1; 
+    transition: color 0.3s ease;
+    padding: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+a:hover {
+    color: #8c9226;
+}
+
+/* Styling for the Social Section */
+.social-section {
+    text-align: center;
+    padding: 20px;
+    background: #151515; /* Dark background */
+    color: #ffffff;
+}
+
+.social-section h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Spacing between icons */
+}
+
+/* Individual Social Icons */
+.social-icons a img {
+    width: 50px; /* Set icon size */
+    height: 50px;
+    border-radius: 50%; /* Make the icons round */
+    background: #000000; /* Fallback background color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for social icons */
+.social-icons a img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Subtle white glow */
+}
+.last{
+    text-align: center;
+    height: 50px;
+}
+.last p{
+    padding-top: 1.5%;
+}
+
+
+/* General Styling 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}*/
+
+/* Hide the nav by default on smaller screens */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: black;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: flex; /* Show when active */
+    }
+
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-toggle:focus {
+        outline: none;
+    }
+}
+
+/* Show nav for large screens */
+@media (min-width: 769px) {
+    .nav-toggle {
+        display: none; /* Hide toggle button on large screens */
+    }
+
+    nav {
+        display: flex; /* Always visible */
+    }
+}
+header img {
+    width: 10%; /* Image takes 50% of the parent container */
+    height: auto; /* Keeps aspect ratio */
+}
